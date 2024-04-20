@@ -11,15 +11,6 @@ const APP_DESCRIPTION = "Best PWA app in the world!";
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,
-  icons: {
-    icon: "/icons/apple-touch-icon.png",
-    shortcut: "/icons/apple-touch-icon.png",
-    apple: "/icons/apple-touch-icon.png",
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/icons/apple-touch-icon.png",
-    },
-  },
   title: {
     default: APP_DEFAULT_TITLE,
     template: APP_TITLE_TEMPLATE,
@@ -29,7 +20,13 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: APP_DEFAULT_TITLE,
-    // startUpImage: [],
+    startupImage: [
+      "/apple-icon.png?52969cefe7cfe78a",
+      {
+        url: "/apple-icon.png?52969cefe7cfe78a",
+        media: "(device-width: 768px) and (device-height: 1024px)",
+      },
+    ],
   },
   formatDetection: {
     telephone: false,
